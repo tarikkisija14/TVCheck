@@ -1,0 +1,15 @@
+C:\Users\tarik\source\repos\TvCheck\TVCheck.Infrastructure\bin\Debug\net8.0\TVCheck.Infrastructure.deps.json
+C:\Users\tarik\source\repos\TvCheck\TVCheck.Infrastructure\bin\Debug\net8.0\TVCheck.Infrastructure.dll
+C:\Users\tarik\source\repos\TvCheck\TVCheck.Infrastructure\bin\Debug\net8.0\TVCheck.Infrastructure.pdb
+C:\Users\tarik\source\repos\TvCheck\TVCheck.Infrastructure\bin\Debug\net8.0\TVCheck.Data.dll
+C:\Users\tarik\source\repos\TvCheck\TVCheck.Infrastructure\bin\Debug\net8.0\TVCheck.Data.pdb
+C:\Users\tarik\source\repos\TvCheck\TVCheck.Infrastructure\obj\Debug\net8.0\TVCheck.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\tarik\source\repos\TvCheck\TVCheck.Infrastructure\obj\Debug\net8.0\TVCheck.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tarik\source\repos\TvCheck\TVCheck.Infrastructure\obj\Debug\net8.0\TVCheck.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\tarik\source\repos\TvCheck\TVCheck.Infrastructure\obj\Debug\net8.0\TVCheck.Infrastructure.AssemblyInfo.cs
+C:\Users\tarik\source\repos\TvCheck\TVCheck.Infrastructure\obj\Debug\net8.0\TVCheck.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\tarik\source\repos\TvCheck\TVCheck.Infrastructure\obj\Debug\net8.0\TVCheck..C15A95F1.Up2Date
+C:\Users\tarik\source\repos\TvCheck\TVCheck.Infrastructure\obj\Debug\net8.0\TVCheck.Infrastructure.dll
+C:\Users\tarik\source\repos\TvCheck\TVCheck.Infrastructure\obj\Debug\net8.0\refint\TVCheck.Infrastructure.dll
+C:\Users\tarik\source\repos\TvCheck\TVCheck.Infrastructure\obj\Debug\net8.0\TVCheck.Infrastructure.pdb
+C:\Users\tarik\source\repos\TvCheck\TVCheck.Infrastructure\obj\Debug\net8.0\ref\TVCheck.Infrastructure.dll

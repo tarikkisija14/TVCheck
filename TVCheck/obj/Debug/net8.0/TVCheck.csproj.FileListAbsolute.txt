@@ -1,0 +1,11 @@
+C:\Users\tarik\source\repos\TVCheck\TVCheck\bin\Debug\net8.0\TVCheck.deps.json
+C:\Users\tarik\source\repos\TVCheck\TVCheck\bin\Debug\net8.0\TVCheck.dll
+C:\Users\tarik\source\repos\TVCheck\TVCheck\bin\Debug\net8.0\TVCheck.pdb
+C:\Users\tarik\source\repos\TVCheck\TVCheck\obj\Debug\net8.0\TVCheck.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tarik\source\repos\TVCheck\TVCheck\obj\Debug\net8.0\TVCheck.AssemblyInfoInputs.cache
+C:\Users\tarik\source\repos\TVCheck\TVCheck\obj\Debug\net8.0\TVCheck.AssemblyInfo.cs
+C:\Users\tarik\source\repos\TVCheck\TVCheck\obj\Debug\net8.0\TVCheck.csproj.CoreCompileInputs.cache
+C:\Users\tarik\source\repos\TVCheck\TVCheck\obj\Debug\net8.0\TVCheck.dll
+C:\Users\tarik\source\repos\TVCheck\TVCheck\obj\Debug\net8.0\refint\TVCheck.dll
+C:\Users\tarik\source\repos\TVCheck\TVCheck\obj\Debug\net8.0\TVCheck.pdb
+C:\Users\tarik\source\repos\TVCheck\TVCheck\obj\Debug\net8.0\ref\TVCheck.dll
