@@ -20,5 +20,20 @@ namespace TVCheck.WinApp.Helpers
             comboBox.DisplayMember = "Name";
             comboBox.ValueMember = "ID";
         }
+
+        public static void LoadCheckedData<T>(this CheckedListBox checkedListBox,List<T>dataSource, string displayMember = "Name", string valueMember = "ID")
+        {
+            checkedListBox.Items.Clear();
+            foreach (var item in dataSource)
+            {
+                var displayValue = item.GetType().GetProperty(displayMember)?.GetValue(item,null);
+                var realValue=item.GetType().GetProperty(valueMember)?.GetValue(item,null);
+                if(displayValue!=null)
+                {
+                    checkedListBox.Items.Add(displayValue);
+                }
+
+            }
+        }
     }
 }

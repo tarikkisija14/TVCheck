@@ -54,6 +54,7 @@
             btnAddShow.TabIndex = 1;
             btnAddShow.Text = "Add Show";
             btnAddShow.UseVisualStyleBackColor = false;
+            btnAddShow.Click += btnAddShow_Click;
             // 
             // frmShows
             // 

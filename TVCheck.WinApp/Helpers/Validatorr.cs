@@ -20,6 +20,8 @@ namespace TvCheck.WinApp.Helpers
                 IsValidInput = false;
             else if(control is TextBox textBox && !textBox.Text.isSet())
                 IsValidInput = false;
+            else if(control is RichTextBox richTextBox&& richTextBox.Text.isSet())
+                IsValidInput = false;
 
 
             if(!IsValidInput)

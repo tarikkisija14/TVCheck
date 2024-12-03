@@ -17,7 +17,7 @@ namespace TVCheck.WinApp.Shows
         public frmShows()
         {
             InitializeComponent();
-            
+
         }
 
         private void frmShows_Load(object sender, EventArgs e)
@@ -25,10 +25,16 @@ namespace TVCheck.WinApp.Shows
             LoadShows();
         }
 
-        private void LoadShows(List<Show>shows =null)
+        private void LoadShows(List<Show> shows = null)
         {
             dgvShows.DataSource = null;
             dgvShows.DataSource = shows ?? InMemoryDB.Shows;
+        }
+
+        private void btnAddShow_Click(object sender, EventArgs e)
+        {
+            if(new frmShowAddEdit().ShowDialog() == DialogResult.OK)
+            { LoadShows(); }
         }
     }
 }
