@@ -17,12 +17,13 @@ namespace TVCheck.WinApp.Shows
         public frmShows()
         {
             InitializeComponent();
-
+            dgvShows.AutoGenerateColumns = false;
         }
 
         private void frmShows_Load(object sender, EventArgs e)
         {
             LoadShows();
+            
         }
 
         private void LoadShows(List<Show> shows = null)
@@ -33,8 +34,20 @@ namespace TVCheck.WinApp.Shows
 
         private void btnAddShow_Click(object sender, EventArgs e)
         {
-            if(new frmShowAddEdit().ShowDialog() == DialogResult.OK)
+            if (new frmShowAddEdit().ShowDialog() == DialogResult.OK)
             { LoadShows(); }
+        }
+
+        private void txtFilter_TextChanged(object sender, EventArgs e)
+        {
+            LoadShows(InMemoryDB.Shows.Where(FilterShows).ToList());
+        }
+
+        private bool FilterShows(Show show)
+        {
+            var filter= txtFilter.Text.ToLower();
+
+            return show.Title.ToLower().Contains(filter);
         }
     }
 }

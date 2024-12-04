@@ -41,9 +41,23 @@ namespace TVCheck.WinApp.Users
             if (new frmUsersAddEdit().ShowDialog() == DialogResult.OK)
             {
 
-               LoadUsers();
+                LoadUsers();
 
             }
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            LoadUsers(InMemoryDB.Users.Where(FilterUsers).ToList());
+        }
+
+        private bool FilterUsers(User user)
+        {
+            var filter = txtSearch.Text.ToLower();
+
+            return user.UserName.ToLower().Contains(filter);
+
+
         }
     }
 }
