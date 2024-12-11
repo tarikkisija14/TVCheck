@@ -10,3 +10,4 @@ C:\Users\tarik\source\repos\TvCheck\TVCheck\obj\Debug\net8.0\refint\TVCheck.Data
 C:\Users\tarik\source\repos\TvCheck\TVCheck\obj\Debug\net8.0\TVCheck.Data.pdb
 C:\Users\tarik\source\repos\TvCheck\TVCheck\obj\Debug\net8.0\ref\TVCheck.Data.dll
 C:\Users\tarik\source\repos\TvCheck\TVCheck\obj\Debug\net8.0\TVCheck.Data.csproj.AssemblyReference.cache
+C:\Users\tarik\source\repos\TvCheck\TVCheck\obj\Debug\net8.0\TVCheck.Data.sourcelink.json

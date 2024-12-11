@@ -26,6 +26,7 @@ namespace TVCheck.Data
         public List <Actor> Cast { get; set; } = new List<Actor>(); 
         public List <StreamingService>StreamingServcies { get; set; } = new List<StreamingService>();
 
+        //-----------------------------------------------------------------------------------------------
         public static Show BreakingBad{ get; set; }
         public static Show StrangerThings { get; set; }
         public static Show GameOfThrones { get; set; }
@@ -36,6 +37,16 @@ namespace TVCheck.Data
         public static Show TheCrown { get; set; }
         public static Show TheWitcher { get; set; }
         public static Show Dark { get; set; }
+        public static Show BetterCallSaul { get; set; }
+        public static Show TheBoys { get; set; }
+        public static Show Westworld { get; set; }
+        public static Show House { get; set; }
+        public static Show Sherlock { get; set; }
+        public static Show BlackMirror { get; set; }
+        public static Show Suits { get; set; }
+        public static Show Vikings { get; set; }
+        public static Show MoneyHeist { get; set; }
+        public static Show PeakyBlinders { get; set; }
 
         public static List<Show> GenerateShows()
         {
@@ -179,10 +190,151 @@ namespace TVCheck.Data
                 Cast = new List<Actor> { Actor.LuisKnebel, Actor.CleopatraCole },
                 StreamingServcies = new List<StreamingService> { StreamingService.Netflix }
             };
+            BetterCallSaul = new Show
+            {
+                ID = 11,
+                Title = "Better Call Saul",
+                Description = "The transformation of Jimmy McGill into Saul Goodman, the shady lawyer from Breaking Bad.",
+                Genres = new List<Genre> { Genre.Crime, Genre.Drama },
+                SeasonCount = 6,
+                IsCompleted = true,
+                PremiereDate = new DateTime(2015, 2, 8),
+                AverageRating = 8.9,
+                TotalDuration = TimeSpan.FromHours(63),
+                Cast = new List<Actor> { Actor.BobOdenkirk, Actor.RheaSeehorn },
+                StreamingServcies = new List<StreamingService> { StreamingService.Netflix }
+            };
+            TheBoys = new Show
+            {
+                ID = 12,
+                Title = "The Boys",
+                Description = "A dark satire on superheroes and their corrupt world.",
+                Genres = new List<Genre> { Genre.Action, Genre.Drama, Genre.Comedy },
+                SeasonCount = 3,
+                IsCompleted = false,
+                PremiereDate = new DateTime(2019, 7, 26),
+                AverageRating = 8.7,
+                TotalDuration = TimeSpan.FromHours(24),
+                Cast = new List<Actor> { Actor.KarlUrban, Actor.JackQuaid },
+                StreamingServcies = new List<StreamingService> { StreamingService.AmazonPrime }
+            };
+            Westworld = new Show
+            {
+                ID = 13,
+                Title = "Westworld",
+                Description = "A futuristic theme park where robots gain consciousness and chaos ensues.",
+                Genres = new List<Genre> { Genre.Drama, Genre.SciFi },
+                SeasonCount = 4,
+                IsCompleted = false,
+                PremiereDate = new DateTime(2016, 10, 2),
+                AverageRating = 8.6,
+                TotalDuration = TimeSpan.FromHours(42),
+                Cast = new List<Actor> { Actor.EvanRachelWood, Actor.AnthonyHopkins },
+                StreamingServcies = new List<StreamingService> { StreamingService.HBOMax }
+            };
+            House = new Show
+            {
+                ID = 14,
+                Title = "House",
+                Description = "A brilliant but misanthropic doctor solves medical mysteries.",
+                Genres = new List<Genre> { Genre.Drama, Genre.Medical },
+                SeasonCount = 8,
+                IsCompleted = true,
+                PremiereDate = new DateTime(2004, 11, 16),
+                AverageRating = 8.7,
+                TotalDuration = TimeSpan.FromHours(131),
+                Cast = new List<Actor> { Actor.HughLaurie, Actor.OmarEpps },
+                StreamingServcies = new List<StreamingService> { StreamingService.Peacock }
+            };
+            Sherlock = new Show
+            {
+                ID = 15,
+                Title = "Sherlock",
+                Description = "A modern retelling of the classic Sherlock Holmes detective stories.",
+                Genres = new List<Genre> { Genre.Crime, Genre.Drama, Genre.Mystery },
+                SeasonCount = 4,
+                IsCompleted = true,
+                PremiereDate = new DateTime(2010, 7, 25),
+                AverageRating = 9.1,
+                TotalDuration = TimeSpan.FromHours(18),
+                Cast = new List<Actor> { Actor.BenedictCumberbatch, Actor.MartinFreeman },
+                StreamingServcies = new List<StreamingService> { StreamingService.Netflix }
+            };
+            BlackMirror = new Show
+            {
+                ID = 16,
+                Title = "Black Mirror",
+                Description = "An anthology series that explores modern society's relationship with technology.",
+                Genres = new List<Genre> { Genre.SciFi, Genre.Drama },
+                SeasonCount = 5,
+                IsCompleted = false,
+                PremiereDate = new DateTime(2011, 12, 4),
+                AverageRating = 8.8,
+                TotalDuration = TimeSpan.FromHours(22),
+                Cast = new List<Actor> { Actor.JonHamm, Actor.MackenzieDavis },
+                StreamingServcies = new List<StreamingService> { StreamingService.Netflix }
+            };
+            Suits = new Show
+            {
+                ID = 17,
+                Title = "Suits",
+                Description = "A talented college dropout works with a brilliant lawyer at a high-profile law firm.",
+                Genres = new List<Genre> { Genre.Drama },
+                SeasonCount = 9,
+                IsCompleted = true,
+                PremiereDate = new DateTime(2011, 6, 23),
+                AverageRating = 8.5,
+                TotalDuration = TimeSpan.FromHours(135),
+                Cast = new List<Actor> { Actor.GabrielMacht, Actor.PatrickJAdams },
+                StreamingServcies = new List<StreamingService> { StreamingService.Netflix }
+            };
+            Vikings = new Show
+            {
+                ID = 18,
+                Title = "Vikings",
+                Description = "The legendary Norse hero Ragnar Lothbrok and his adventures.",
+                Genres = new List<Genre> { Genre.Action, Genre.Drama, Genre.Historical },
+                SeasonCount = 6,
+                IsCompleted = true,
+                PremiereDate = new DateTime(2013, 3, 3),
+                AverageRating = 8.5,
+                TotalDuration = TimeSpan.FromHours(89),
+                Cast = new List<Actor> { Actor.TravisFimmel, Actor.KatherynWinnick },
+                StreamingServcies = new List<StreamingService> { StreamingService.Netflix }
+            };
+            MoneyHeist = new Show
+            {
+                ID = 19,
+                Title = "Money Heist",
+                Description = "A criminal mastermind orchestrates a major heist on Spain's Royal Mint.",
+                Genres = new List<Genre> { Genre.Crime, Genre.Drama, Genre.Thriller },
+                SeasonCount = 5,
+                IsCompleted = true,
+                PremiereDate = new DateTime(2017, 5, 2),
+                AverageRating = 8.2,
+                TotalDuration = TimeSpan.FromHours(41),
+                Cast = new List<Actor> { Actor.AlvaroMorte, Actor.UrsulaCorbero },
+                StreamingServcies = new List<StreamingService> { StreamingService.Netflix }
+            };
+            PeakyBlinders = new Show
+            {
+                ID = 20,
+                Title = "Peaky Blinders",
+                Description = "The story of a gangster family in Birmingham, England, after World War I.",
+                Genres = new List<Genre> { Genre.Crime, Genre.Drama },
+                SeasonCount = 6,
+                IsCompleted = true,
+                PremiereDate = new DateTime(2013, 9, 12),
+                AverageRating = 8.8,
+                TotalDuration = TimeSpan.FromHours(36),
+                Cast = new List<Actor> { Actor.CillianMurphy, Actor.HelenMcCrory },
+                StreamingServcies = new List<StreamingService> { StreamingService.Netflix }
+            };
 
             return new List<Show>{
                BreakingBad, GameOfThrones, StrangerThings, ThisIsUs, TheOffice,
-                Friends, TheMandolorian, TheCrown, TheWitcher, Dark
+                Friends, TheMandolorian, TheCrown, TheWitcher, Dark,BetterCallSaul, TheBoys, Westworld, House, 
+                Sherlock, BlackMirror, Suits, Vikings, MoneyHeist, PeakyBlinders
             };
 
         }

@@ -13,3 +13,4 @@ C:\Users\tarik\source\repos\TvCheck\TVCheck.Infrastructure\obj\Debug\net8.0\TVCh
 C:\Users\tarik\source\repos\TvCheck\TVCheck.Infrastructure\obj\Debug\net8.0\refint\TVCheck.Infrastructure.dll
 C:\Users\tarik\source\repos\TvCheck\TVCheck.Infrastructure\obj\Debug\net8.0\TVCheck.Infrastructure.pdb
 C:\Users\tarik\source\repos\TvCheck\TVCheck.Infrastructure\obj\Debug\net8.0\ref\TVCheck.Infrastructure.dll
+C:\Users\tarik\source\repos\TvCheck\TVCheck.Infrastructure\obj\Debug\net8.0\TVCheck.Infrastructure.sourcelink.json

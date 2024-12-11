@@ -56,7 +56,7 @@ namespace TvCheck.WinApp
             pictureBox1.Image = Resource1.WhatsApp_Image_2024_11_29_at_21_03_50_b0741f95;
             pictureBox1.Location = new Point(112, 39);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(114, 102);
+            pictureBox1.Size = new Size(119, 108);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -66,7 +66,7 @@ namespace TvCheck.WinApp
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(75, 144);
+            label1.Location = new Point(89, 150);
             label1.Name = "label1";
             label1.Size = new Size(181, 21);
             label1.TabIndex = 1;

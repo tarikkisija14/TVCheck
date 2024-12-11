@@ -16,9 +16,12 @@ namespace TVCheck.WinApp.Users
 {
     public partial class frmUsersAddEdit : Form
     {
-        public frmUsersAddEdit()
+        private User? user;
+
+        public frmUsersAddEdit(User?choosenUser=null)
         {
             InitializeComponent();
+            this.user = choosenUser ?? new User();
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -28,7 +31,7 @@ namespace TVCheck.WinApp.Users
 
         private void frmUsersAddEdit_Load(object sender, EventArgs e)
         {
-
+            LoadData();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -46,7 +49,13 @@ namespace TVCheck.WinApp.Users
                     isActive = cbIsActive.Checked,
                     Avatar = pbAvatar.Image
                 };
-                InMemoryDB.Users.Add(user);
+
+                if (user.ID == 0)
+                {
+                    user.ID=InMemoryDB.Users.Count+1;
+                    InMemoryDB.Users.Add(user);
+                }
+
                 DialogResult = DialogResult.OK;
                 Close();
             }
@@ -78,6 +87,20 @@ namespace TVCheck.WinApp.Users
         {
             txtUsername.Text = $"{txtFirstName.Text}.{txtLastName.Text}";
         }
+
+        private void LoadData()
+        {
+            txtFirstName.Text = user.FirstName;
+            txtLastName.Text = user.LastName;
+            txtEmail.Text = user.Email; 
+            txtPassword.Text = user.Password;
+            txtEmail.Text = user.Email;
+            dtpRegDate.Value = user.RegistrationDate;
+            cbIsActive.Checked = user.isActive;
+
+        }
+
+
 
        
     }

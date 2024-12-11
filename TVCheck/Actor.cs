@@ -42,10 +42,29 @@ namespace TVCheck.Data
         public static Actor CleopatraCole { get; internal set; }
         public static Actor ClaireFoy { get; internal set; }
         public static Actor MattSmith { get; internal set; }
+        public static Actor BobOdenkirk { get; internal set; }
+        public static Actor RheaSeehorn { get; internal set; }
+        public static Actor KarlUrban { get; internal set; }
+        public static Actor JackQuaid { get; internal set; }
+        public static Actor EvanRachelWood { get; internal set; }
+        public static Actor AnthonyHopkins { get; internal set; }
+        public static Actor HughLaurie { get; internal set; }
+        public static Actor OmarEpps { get; internal set; }
+        public static Actor BenedictCumberbatch { get; internal set; }
+        public static Actor MartinFreeman { get; internal set; }
+        public static Actor JonHamm { get; internal set; }
+        public static Actor MackenzieDavis { get; internal set; }
+        public static Actor GabrielMacht { get; internal set; }
+        public static Actor PatrickJAdams { get; internal set; }
+        public static Actor TravisFimmel { get; internal set; }
+        public static Actor KatherynWinnick { get; internal set; }
+        public static Actor AlvaroMorte { get; internal set; }
+        public static Actor UrsulaCorbero { get; internal set; }
+        public static Actor CillianMurphy { get; internal set; }
+        public static Actor HelenMcCrory { get; internal set; }
 
+       
 
-
-        // Metoda za generisanje svih glumaca
         public static List<Actor> GenerateActors()
         {
             BryanCranston = new Actor
@@ -289,12 +308,196 @@ namespace TVCheck.Data
                 Biography = "Claire Foy is known for playing Queen Elizabeth II in The Crown.",
                 Awards = new List<string> { "Golden Globe Award", "Primetime Emmy Award" }
             };
+            BobOdenkirk = new Actor
+            {
+                ID = 28,
+                Name = "Bob Odenkirk",
+                BirthDate = new DateTime(1962, 10, 22),
+                Biography = "Bob Odenkirk is known for his role as Saul Goodman in Better Call Saul.",
+                Awards = new List<string> { "Primetime Emmy Award" }
+            };
+
+            RheaSeehorn = new Actor
+            {
+                ID = 29,
+                Name = "Rhea Seehorn",
+                BirthDate = new DateTime(1972, 5, 12),
+                Biography = "Rhea Seehorn is known for her role as Kim Wexler in Better Call Saul.",
+                Awards = new List<string> { "Critics' Choice Award" }
+            };
+
+            KarlUrban = new Actor
+            {
+                ID = 30,
+                Name = "Karl Urban",
+                BirthDate = new DateTime(1972, 6, 7),
+                Biography = "Karl Urban is known for his role as Billy Butcher in The Boys.",
+                Awards = new List<string> { "Saturn Award" }
+            };
+
+            JackQuaid = new Actor
+            {
+                ID = 31,
+                Name = "Jack Quaid",
+                BirthDate = new DateTime(1992, 4, 24),
+                Biography = "Jack Quaid is known for his role as Hughie Campbell in The Boys.",
+                Awards = new List<string> { "Critics' Choice Award" }
+            };
+
+            EvanRachelWood = new Actor
+            {
+                ID = 32,
+                Name = "Evan Rachel Wood",
+                BirthDate = new DateTime(1987, 9, 7),
+                Biography = "Evan Rachel Wood is known for her role as Dolores Abernathy in Westworld.",
+                Awards = new List<string> { "Golden Globe Award" }
+            };
+
+            AnthonyHopkins = new Actor
+            {
+                ID = 33,
+                Name = "Anthony Hopkins",
+                BirthDate = new DateTime(1937, 12, 31),
+                Biography = "Anthony Hopkins is known for his role as Dr. Hannibal Lecter in The Silence of the Lambs.",
+                Awards = new List<string> { "Academy Award", "BAFTA Award" }
+            };
+
+            HughLaurie = new Actor
+            {
+                ID = 34,
+                Name = "Hugh Laurie",
+                BirthDate = new DateTime(1959, 6, 11),
+                Biography = "Hugh Laurie is known for his role as Dr. Gregory House in House.",
+                Awards = new List<string> { "Golden Globe Award" }
+            };
+
+            OmarEpps = new Actor
+            {
+                ID = 35,
+                Name = "Omar Epps",
+                BirthDate = new DateTime(1973, 7, 20),
+                Biography = "Omar Epps is known for his role as Dr. Eric Foreman in House.",
+                Awards = new List<string> { "NAACP Image Award" }
+            };
+
+            BenedictCumberbatch = new Actor
+            {
+                ID = 36,
+                Name = "Benedict Cumberbatch",
+                BirthDate = new DateTime(1976, 7, 19),
+                Biography = "Benedict Cumberbatch is known for his role as Sherlock Holmes in Sherlock.",
+                Awards = new List<string> { "BAFTA Award", "Primetime Emmy Award" }
+            };
+
+            MartinFreeman = new Actor
+            {
+                ID = 37,
+                Name = "Martin Freeman",
+                BirthDate = new DateTime(1971, 9, 8),
+                Biography = "Martin Freeman is known for his role as Dr. John Watson in Sherlock.",
+                Awards = new List<string> { "BAFTA Award", "Screen Actors Guild Award" }
+            };
+
+            JonHamm = new Actor
+            {
+                ID = 38,
+                Name = "Jon Hamm",
+                BirthDate = new DateTime(1971, 3, 10),
+                Biography = "Jon Hamm is known for his role as Don Draper in Mad Men.",
+                Awards = new List<string> { "Golden Globe Award", "Primetime Emmy Award" }
+            };
+
+            MackenzieDavis = new Actor
+            {
+                ID = 39,
+                Name = "Mackenzie Davis",
+                BirthDate = new DateTime(1987, 4, 1),
+                Biography = "Mackenzie Davis is known for her role as Cameron Howe in Halt and Catch Fire.",
+                Awards = new List<string> { "Critics' Choice Award" }
+            };
+
+            GabrielMacht = new Actor
+            {
+                ID = 40,
+                Name = "Gabriel Macht",
+                BirthDate = new DateTime(1972, 1, 22),
+                Biography = "Gabriel Macht is known for his role as Harvey Specter in Suits.",
+                Awards = new List<string> { "People's Choice Award" }
+            };
+
+            PatrickJAdams = new Actor
+            {
+                ID = 41,
+                Name = "Patrick J. Adams",
+                BirthDate = new DateTime(1981, 8, 27),
+                Biography = "Patrick J. Adams is known for his role as Mike Ross in Suits.",
+                Awards = new List<string> { "Screen Actors Guild Award" }
+            };
+
+            TravisFimmel = new Actor
+            {
+                ID = 42,
+                Name = "Travis Fimmel",
+                BirthDate = new DateTime(1979, 7, 15),
+                Biography = "Travis Fimmel is known for his role as Ragnar Lothbrok in Vikings.",
+                Awards = new List<string> { "Critics' Choice Award" }
+            };
+
+            KatherynWinnick = new Actor
+            {
+                ID = 43,
+                Name = "Katheryn Winnick",
+                BirthDate = new DateTime(1977, 12, 17),
+                Biography = "Katheryn Winnick is known for her role as Lagertha in Vikings.",
+                Awards = new List<string> { "Golden Maple Award" }
+            };
+
+            AlvaroMorte = new Actor
+            {
+                ID = 44,
+                Name = "Alvaro Morte",
+                BirthDate = new DateTime(1975, 2, 23),
+                Biography = "Alvaro Morte is best known for his role as The Professor in La Casa de Papel.",
+                Awards = new List<string> { "Premio 40 Principales", "Best Actor in a Leading Role" }
+            };
+
+            UrsulaCorbero = new Actor
+            {
+                ID = 45,
+                Name = "Ursula Corbero",
+                BirthDate = new DateTime(1989, 8, 11),
+                Biography = "Ursula Corbero is widely recognized for her portrayal of Tokyo in La Casa de Papel.",
+                Awards = new List<string> { "Best Actress", "Nominated for Ondas Award" }
+            };
+
+            CillianMurphy = new Actor
+            {
+                ID = 46,
+                Name = "Cillian Murphy",
+                BirthDate = new DateTime(1976, 5, 25),
+                Biography = "Cillian Murphy is an Irish actor, best known for his roles in Peaky Blinders and Inception.",
+                Awards = new List<string> { "Cork Film Festival Award", "Best Supporting Actor" }
+            };
+
+            HelenMcCrory = new Actor
+            {
+                ID = 47,
+                Name = "Helen McCrory",
+                BirthDate = new DateTime(1968, 8, 17),
+                Biography = "Helen McCrory was an English actress known for her role in Peaky Blinders and Harry Potter.",
+                Awards = new List<string> { "Best Actress Nominee", "British Academy Television Award" }
+            };
 
             return new List<Actor>
             {
-                BryanCranston, AaronPaul, PeterDinklage, EmiliaClarke, MandyMoore,
-                SterlingKBrown, JaredPadalecki, JensenAckles, MillieBobbyBrown, WinonaRyder,
-                KitHarington, JodieComer, SandraOh, JeffreyDeanMorgan, NormanReedus
+                 BryanCranston, AaronPaul, PeterDinklage, EmiliaClarke, MandyMoore,
+                 SterlingKBrown, JaredPadalecki, JensenAckles, MillieBobbyBrown, WinonaRyder,
+                 KitHarington, JodieComer, SandraOh, JeffreyDeanMorgan, NormanReedus,
+                 BobOdenkirk, RheaSeehorn, KarlUrban, JackQuaid, EvanRachelWood,
+                 AnthonyHopkins, HughLaurie, OmarEpps, BenedictCumberbatch, MartinFreeman,
+                 JonHamm, MackenzieDavis, GabrielMacht, PatrickJAdams, TravisFimmel, KatherynWinnick,
+                 AlvaroMorte, UrsulaCorbero, CillianMurphy, HelenMcCrory
+
             };
         }
     }

@@ -38,7 +38,7 @@ namespace TVCheck.Data
         public static Genre Seinen { get; set; }
         public static Genre Supernatural { get; set; }
 
-
+        public static Genre Medical { get; set; }
 
 
 
@@ -210,7 +210,13 @@ namespace TVCheck.Data
                 Name = "Psychological",
                 Description = "Psychological series focus on mental and emotional conflicts, often exploring themes of perception, manipulation, and mind games."
             };
+            Medical = new Genre
+            {
+                ID = 26,
+                Name = "Medical",
+                Description = "Medical"
 
+            };
             
             return new List<Genre>
             {
