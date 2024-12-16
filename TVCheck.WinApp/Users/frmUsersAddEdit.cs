@@ -38,17 +38,16 @@ namespace TVCheck.WinApp.Users
         {
             if (ValidateEntry())
             {
-                User user = new User()
-                {
-                    FirstName = txtFirstName.Text,
-                    LastName = txtLastName.Text,
-                    Email = txtEmail.Text,
-                    UserName = txtUsername.Text,
-                    Password = txtPassword.Text,
-                    RegistrationDate = dtpRegDate.Value,
-                    isActive = cbIsActive.Checked,
-                    Avatar = pbAvatar.Image
-                };
+
+                user.FirstName = txtFirstName.Text;
+                user.LastName = txtLastName.Text;
+                user.Email = txtEmail.Text;
+                user.UserName = txtUsername.Text;
+                user.Password = txtPassword.Text;
+                user.RegistrationDate = dtpRegDate.Value;
+                user.isActive = cbIsActive.Checked;
+                user.Avatar = pbAvatar.Image;
+               
 
                 if (user.ID == 0)
                 {
@@ -80,18 +79,19 @@ namespace TVCheck.WinApp.Users
         }
         private void txtUsername_TextChanged(object sender, EventArgs e)
         {
-            GenerateUsername();
+           // GenerateUsername();
         }
 
         private void GenerateUsername()
         {
-            txtUsername.Text = $"{txtFirstName.Text}.{txtLastName.Text}";
+            //txtUsername.Text = $"{txtFirstName.Text}.{txtLastName.Text}";
         }
 
         private void LoadData()
         {
             txtFirstName.Text = user.FirstName;
             txtLastName.Text = user.LastName;
+            txtUsername.Text = user.UserName;
             txtEmail.Text = user.Email; 
             txtPassword.Text = user.Password;
             txtEmail.Text = user.Email;

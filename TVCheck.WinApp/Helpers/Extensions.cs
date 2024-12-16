@@ -38,9 +38,10 @@ namespace TVCheck.WinApp.Helpers
 
         public static object GetRow(this DataGridView dataGridView)
         {
-            if (dataGridView.SelectedRows.Count == 0)
+            if (dataGridView.CurrentRow == null)
                 throw new Exception("You haven't selected anything");
-            return dataGridView.SelectedRows[0].DataBoundItem;
+            return dataGridView.CurrentRow.DataBoundItem;
+            
         }
 
 

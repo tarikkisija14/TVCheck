@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TVCheck.Data;
 using TVCheck.Infrastructure;
+using TVCheck.WinApp.Helpers;
 
 namespace TVCheck.WinApp.Users
 {
@@ -22,6 +23,16 @@ namespace TVCheck.WinApp.Users
 
         private void dgvUsers_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            var choosenUser=dgvUsers.GetRow() as User;
+
+            Form form = null;
+
+            form = new frmUsersAddEdit(choosenUser);
+
+            if (form.ShowDialog() == DialogResult.OK)
+            {
+                LoadUsers();
+            }
 
         }
 

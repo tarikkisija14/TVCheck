@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TVCheck.WinApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2bd291887e1e6b5f1592aab39f3b2f1e2e35654")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3081feaea4d7516fde1d2ab1326782faf38c5497")]
 [assembly: System.Reflection.AssemblyProductAttribute("TVCheck.WinApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TVCheck.WinApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
