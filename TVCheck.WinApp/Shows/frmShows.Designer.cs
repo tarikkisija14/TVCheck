@@ -29,15 +29,16 @@
         private void InitializeComponent()
         {
             dgvShows = new DataGridView();
-            btnAddShow = new Button();
             Avatar = new DataGridViewImageColumn();
             Title = new DataGridViewTextBoxColumn();
             AverageRating = new DataGridViewTextBoxColumn();
             IsCompleted = new DataGridViewCheckBoxColumn();
             SeasonCount = new DataGridViewTextBoxColumn();
             PremiereDate = new DataGridViewTextBoxColumn();
+            btnAddShow = new Button();
             label1 = new Label();
             txtFilter = new TextBox();
+            btnRemove = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvShows).BeginInit();
             SuspendLayout();
             // 
@@ -52,18 +53,7 @@
             dgvShows.ReadOnly = true;
             dgvShows.Size = new Size(776, 355);
             dgvShows.TabIndex = 0;
-            // 
-            // btnAddShow
-            // 
-            btnAddShow.BackColor = Color.Black;
-            btnAddShow.ForeColor = Color.White;
-            btnAddShow.Location = new Point(681, 418);
-            btnAddShow.Name = "btnAddShow";
-            btnAddShow.Size = new Size(107, 35);
-            btnAddShow.TabIndex = 1;
-            btnAddShow.Text = "Add Show";
-            btnAddShow.UseVisualStyleBackColor = false;
-            btnAddShow.Click += btnAddShow_Click;
+            dgvShows.CellContentClick += dgvShows_CellContentClick;
             // 
             // Avatar
             // 
@@ -108,6 +98,18 @@
             PremiereDate.Name = "PremiereDate";
             PremiereDate.ReadOnly = true;
             // 
+            // btnAddShow
+            // 
+            btnAddShow.BackColor = Color.Black;
+            btnAddShow.ForeColor = Color.White;
+            btnAddShow.Location = new Point(681, 418);
+            btnAddShow.Name = "btnAddShow";
+            btnAddShow.Size = new Size(107, 35);
+            btnAddShow.TabIndex = 1;
+            btnAddShow.Text = "Add Show";
+            btnAddShow.UseVisualStyleBackColor = false;
+            btnAddShow.Click += btnAddShow_Click;
+            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -125,11 +127,24 @@
             txtFilter.TabIndex = 3;
             txtFilter.TextChanged += txtFilter_TextChanged;
             // 
+            // btnRemove
+            // 
+            btnRemove.BackColor = Color.Black;
+            btnRemove.ForeColor = Color.White;
+            btnRemove.Location = new Point(568, 418);
+            btnRemove.Name = "btnRemove";
+            btnRemove.Size = new Size(107, 35);
+            btnRemove.TabIndex = 4;
+            btnRemove.Text = "Remove Show";
+            btnRemove.UseVisualStyleBackColor = false;
+            btnRemove.Click += btnRemove_Click;
+            // 
             // frmShows
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 458);
+            Controls.Add(btnRemove);
             Controls.Add(txtFilter);
             Controls.Add(label1);
             Controls.Add(btnAddShow);
@@ -154,5 +169,6 @@
         private DataGridViewTextBoxColumn PremiereDate;
         private Label label1;
         private TextBox txtFilter;
+        private Button btnRemove;
     }
 }

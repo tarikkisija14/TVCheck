@@ -41,8 +41,6 @@ namespace TVCheck.Data
         public static Genre Medical { get; set; }
 
 
-
-
         public static List<Genre> GenerateGenres()
         {
             

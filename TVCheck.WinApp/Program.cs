@@ -14,7 +14,7 @@ namespace TvCheck.WinApp
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            var start = new frmUsers();
+            var start = new frmShows();
             Application.Run(start);
         }
     }

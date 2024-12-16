@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TVCheck.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3081feaea4d7516fde1d2ab1326782faf38c5497")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f75f52e496a0fe8311156bea8c49fd6b2fa50b74")]
 [assembly: System.Reflection.AssemblyProductAttribute("TVCheck.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TVCheck.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

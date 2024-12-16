@@ -19,6 +19,9 @@ namespace TVCheck.Data
         public DateTime RegistrationDate { get; set; }= DateTime.Now;
         public DateTime LastLoginDate { get; set; }=DateTime.Now;
         public List<Show> Watchlist { get; set; } = new List<Show>();
+
+        public List<Show> ShowsAdded { get; set; } = new List<Show>(); 
+
         public Image Avatar { get; set; }
 
 
@@ -44,9 +47,9 @@ namespace TVCheck.Data
                 UserName = "admin",
                 Email = "admin@example.com",
                 Password = "admin",
-                RegistrationDate = new DateTime(2024,11,1),
+                RegistrationDate = new DateTime(2024, 11, 1),
                 isActive = true,
-
+                ShowsAdded = new List<Show>() { Show.BreakingBad, Show.House }
             };
             NotActive = new User
             {
@@ -56,8 +59,9 @@ namespace TVCheck.Data
                 UserName = "NotActive",
                 Email = "NotActive@example.com",
                 Password = "notactive",
-                RegistrationDate = new DateTime(2023,11,1),
-                isActive = false
+                RegistrationDate = new DateTime(2023, 11, 1),
+                isActive = false,
+                ShowsAdded = new List<Show>() { Show.Friends, Show.TheOffice, Show.Sherlock }
             };
             return new List<User> { Admin, NotActive };
         }
