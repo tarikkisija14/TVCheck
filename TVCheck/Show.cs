@@ -47,7 +47,17 @@ namespace TVCheck.Data
         public static Show Vikings { get; set; }
         public static Show MoneyHeist { get; set; }
         public static Show PeakyBlinders { get; set; }
-
+        public static Show MadMen { get; set; }
+        public static Show TheWire { get; set; }
+        public static Show TheSopranos { get; set; }
+        public static Show Fargo { get; set; }
+        public static Show TrueDetective { get; set; }
+        public static Show TheExpanse { get; set; }
+        public static Show ParksAndRecreation { get; set; }
+        public static Show HowIMetYourMother { get; set; }
+        public static Show BlackSails { get; set; }
+        public static Show Arcane { get; set; }
+        public static Show BoJackHorseman { get; set; }
         public static List<Show> GenerateShows()
         {
             BreakingBad = new Show
@@ -331,10 +341,118 @@ namespace TVCheck.Data
                 StreamingServcies = new List<StreamingService> { StreamingService.Netflix }
             };
 
+            MadMen = new Show
+            {
+                ID = 21,
+                Title = "Mad Men",
+                Description = "A drama about one of New York's most prestigious ad agencies at the beginning of the 1960s.",
+                Genres = new List<Genre> { Genre.Drama },
+                SeasonCount = 7,
+                IsCompleted = true,
+                PremiereDate = new DateTime(2007, 7, 19),
+                AverageRating = 8.6,
+                TotalDuration = TimeSpan.FromHours(92),
+                Cast = new List<Actor> { Actor.JonHamm, Actor.ElisabethMoss },
+                StreamingServcies = new List<StreamingService> { StreamingService.Netflix }
+            };
+
+            TheWire = new Show
+            {
+                ID = 22,
+                Title = "The Wire",
+                Description = "Baltimore drug scene, seen through the eyes of drug dealers and law enforcement.",
+                Genres = new List<Genre> { Genre.Crime, Genre.Drama },
+                SeasonCount = 5,
+                IsCompleted = true,
+                PremiereDate = new DateTime(2002, 6, 2),
+                AverageRating = 9.3,
+                TotalDuration = TimeSpan.FromHours(60),
+                Cast = new List<Actor> { Actor.DominicWest, Actor.IdrisElba },
+                StreamingServcies = new List<StreamingService> { StreamingService.HBOMax }
+            };
+
+            TheSopranos = new Show
+            {
+                ID = 23,
+                Title = "The Sopranos",
+                Description = "New Jersey mob boss Tony Soprano deals with personal and professional issues in his home and business life.",
+                Genres = new List<Genre> { Genre.Crime, Genre.Drama },
+                SeasonCount = 6,
+                IsCompleted = true,
+                PremiereDate = new DateTime(1999, 1, 10),
+                AverageRating = 9.2,
+                TotalDuration = TimeSpan.FromHours(86),
+                Cast = new List<Actor> { Actor.JamesGandolfini, Actor.LorraineBracco },
+                StreamingServcies = new List<StreamingService> { StreamingService.HBOMax }
+            };
+
+            Fargo = new Show
+            {
+                ID = 24,
+                Title = "Fargo",
+                Description = "Various chronicles of deception, intrigue, and murder in and around frozen Minnesota.",
+                Genres = new List<Genre> { Genre.Crime, Genre.Drama },
+                SeasonCount = 4,
+                IsCompleted = false,
+                PremiereDate = new DateTime(2014, 4, 15),
+                AverageRating = 8.9,
+                TotalDuration = TimeSpan.FromHours(40),
+                Cast = new List<Actor> { Actor.BillyBobThornton, Actor.MartinFreeman },
+                StreamingServcies = new List<StreamingService> { StreamingService.Hulu }
+            };
+
+            TrueDetective = new Show
+            {
+                ID = 25,
+                Title = "True Detective",
+                Description = "Seasonal anthology series in which police investigations unearth the personal and professional secrets of those involved.",
+                Genres = new List<Genre> { Genre.Crime, Genre.Drama, Genre.Mystery },
+                SeasonCount = 3,
+                IsCompleted = false,
+                PremiereDate = new DateTime(2014, 1, 12),
+                AverageRating = 9.0,
+                TotalDuration = TimeSpan.FromHours(24),
+                Cast = new List<Actor> { Actor.MatthewMcConaughey, Actor.WoodyHarrelson },
+                StreamingServcies = new List<StreamingService> { StreamingService.HBOMax }
+            };
+
+            TheExpanse = new Show
+            {
+                ID = 26,
+                Title = "The Expanse",
+                Description = "A political conspiracy and a vast solar system war set the stage for humanity's survival.",
+                Genres = new List<Genre> { Genre.SciFi, Genre.Drama },
+                SeasonCount = 6,
+                IsCompleted = true,
+                PremiereDate = new DateTime(2015, 12, 14),
+                AverageRating = 8.5,
+                TotalDuration = TimeSpan.FromHours(60),
+                Cast = new List<Actor> { Actor.StevenStrait, Actor.CasAnvar },
+                StreamingServcies = new List<StreamingService> { StreamingService.AmazonPrime }
+            };
+
+            ParksAndRecreation = new Show
+            {
+                ID = 27,
+                Title = "Parks and Recreation",
+                Description = "The absurd antics of an Indiana town's public officials as they pursue various projects to make their city a better place.",
+                Genres = new List<Genre> { Genre.Comedy },
+                SeasonCount = 7,
+                IsCompleted = true,
+                PremiereDate = new DateTime(2009, 4, 9),
+                AverageRating = 8.6,
+                TotalDuration = TimeSpan.FromHours(70),
+                Cast = new List<Actor> { Actor.AmyPoehler, Actor.NickOfferman },
+                StreamingServcies = new List<StreamingService> { StreamingService.Peacock }
+            };
+
+
+
             return new List<Show>{
                BreakingBad, GameOfThrones, StrangerThings, ThisIsUs, TheOffice,
                 Friends, TheMandolorian, TheCrown, TheWitcher, Dark,BetterCallSaul, TheBoys, Westworld, House, 
-                Sherlock, BlackMirror, Suits, Vikings, MoneyHeist, PeakyBlinders
+                Sherlock, BlackMirror, Suits, Vikings, MoneyHeist, PeakyBlinders, MadMen, TheWire, 
+                TheSopranos, Fargo, TrueDetective, TheExpanse, ParksAndRecreation
             };
 
         }

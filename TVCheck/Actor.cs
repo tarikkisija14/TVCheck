@@ -62,8 +62,24 @@ namespace TVCheck.Data
         public static Actor UrsulaCorbero { get; internal set; }
         public static Actor CillianMurphy { get; internal set; }
         public static Actor HelenMcCrory { get; internal set; }
+        public static Actor NickOfferman { get; internal set; }
+        public static Actor AmyPoehler { get; internal set; }
+        public static Actor CasAnvar { get; internal set; }
+        public static Actor StevenStrait { get; internal set; }
+        public static Actor WoodyHarrelson { get; internal set; }
+        public static Actor MatthewMcConaughey { get; internal set; }
+        public static Actor BillyBobThornton { get; internal set; }
+        public static Actor LorraineBracco { get; internal set; }
+        public static Actor JamesGandolfini { get; internal set; }
+        public static Actor IdrisElba { get; internal set; }
 
-       
+        public static Actor DominicWest { get; internal set; }
+        public static Actor ElisabethMoss { get; internal set; }
+
+        
+
+
+
 
         public static List<Actor> GenerateActors()
         {
@@ -488,6 +504,116 @@ namespace TVCheck.Data
                 Awards = new List<string> { "Best Actress Nominee", "British Academy Television Award" }
             };
 
+            ElisabethMoss = new Actor
+            {
+                ID = 48,
+                Name = "Elisabeth Moss",
+                BirthDate = new DateTime(1982, 7, 24),
+                Biography = "Elisabeth Moss is known for her roles in The Handmaid's Tale and Mad Men.",
+                Awards = new List<string> { "Primetime Emmy Award", "Golden Globe Award" }
+            };
+
+            DominicWest = new Actor
+            {
+                ID = 49,
+                Name = "Dominic West",
+                BirthDate = new DateTime(1969, 10, 15),
+                Biography = "Dominic West is famous for his role as Jimmy McNulty in The Wire.",
+                Awards = new List<string> { "BAFTA Award" }
+            };
+
+            IdrisElba = new Actor
+            {
+                ID = 50,
+                Name = "Idris Elba",
+                BirthDate = new DateTime(1972, 9, 6),
+                Biography = "Idris Elba is known for his roles in Luther and The Wire.",
+                Awards = new List<string> { "Golden Globe Award", "Screen Actors Guild Award" }
+            };
+
+            JamesGandolfini = new Actor
+            {
+                ID = 51,
+                Name = "James Gandolfini",
+                BirthDate = new DateTime(1961, 9, 18),
+                Biography = "James Gandolfini is best known for his role as Tony Soprano in The Sopranos.",
+                Awards = new List<string> { "Primetime Emmy Award", "Golden Globe Award" }
+            };
+
+            LorraineBracco = new Actor
+            {
+                ID = 52,
+                Name = "Lorraine Bracco",
+                BirthDate = new DateTime(1954, 10, 2),
+                Biography = "Lorraine Bracco is known for her role as Dr. Melfi in The Sopranos.",
+                Awards = new List<string> { "Screen Actors Guild Award" }
+            };
+
+            BillyBobThornton = new Actor
+            {
+                ID = 53,
+                Name = "Billy Bob Thornton",
+                BirthDate = new DateTime(1955, 8, 4),
+                Biography = "Billy Bob Thornton is famous for his role in Fargo (TV series) and Sling Blade.",
+                Awards = new List<string> { "Academy Award", "Golden Globe Award" }
+            };
+
+            
+            MatthewMcConaughey = new Actor
+            {
+                ID = 55,
+                Name = "Matthew McConaughey",
+                BirthDate = new DateTime(1969, 11, 4),
+                Biography = "Matthew McConaughey is famous for his role as Rust Cohle in True Detective.",
+                Awards = new List<string> { "Academy Award", "Golden Globe Award" }
+            };
+
+            WoodyHarrelson = new Actor
+            {
+                ID = 56,
+                Name = "Woody Harrelson",
+                BirthDate = new DateTime(1961, 7, 23),
+                Biography = "Woody Harrelson is known for his roles in True Detective and Zombieland.",
+                Awards = new List<string> { "Primetime Emmy Award", "Nominated for Academy Award" }
+            };
+
+            StevenStrait = new Actor
+            {
+                ID = 57,
+                Name = "Steven Strait",
+                BirthDate = new DateTime(1986, 3, 23),
+                Biography = "Steven Strait is best known for his role as James Holden in The Expanse.",
+                Awards = new List<string> { "Nominated for Saturn Award" }
+            };
+
+            CasAnvar = new Actor
+            {
+                ID = 58,
+                Name = "Cas Anvar",
+                BirthDate = new DateTime(1966, 3, 15),
+                Biography = "Cas Anvar is known for his role as Alex Kamal in The Expanse.",
+                Awards = new List<string> { "Nominated for Canadian Screen Award" }
+            };
+
+            AmyPoehler = new Actor
+            {
+                ID = 59,
+                Name = "Amy Poehler",
+                BirthDate = new DateTime(1971, 9, 16),
+                Biography = "Amy Poehler is famous for her role as Leslie Knope in Parks and Recreation.",
+                Awards = new List<string> { "Golden Globe Award", "Primetime Emmy Award" }
+            };
+
+            NickOfferman = new Actor
+            {
+                ID = 60,
+                Name = "Nick Offerman",
+                BirthDate = new DateTime(1970, 6, 26),
+                Biography = "Nick Offerman is best known for his role as Ron Swanson in Parks and Recreation.",
+                Awards = new List<string> { "Critics' Choice Award" }
+            };
+
+
             return new List<Actor>
             {
                  BryanCranston, AaronPaul, PeterDinklage, EmiliaClarke, MandyMoore,
@@ -496,7 +622,10 @@ namespace TVCheck.Data
                  BobOdenkirk, RheaSeehorn, KarlUrban, JackQuaid, EvanRachelWood,
                  AnthonyHopkins, HughLaurie, OmarEpps, BenedictCumberbatch, MartinFreeman,
                  JonHamm, MackenzieDavis, GabrielMacht, PatrickJAdams, TravisFimmel, KatherynWinnick,
-                 AlvaroMorte, UrsulaCorbero, CillianMurphy, HelenMcCrory
+                 AlvaroMorte, UrsulaCorbero, CillianMurphy, HelenMcCrory,NickOfferman,AmyPoehler,CasAnvar,
+                 StevenStrait,WoodyHarrelson,MatthewMcConaughey,BillyBobThornton, LorraineBracco,
+                 JamesGandolfini,IdrisElba,DominicWest,ElisabethMoss
+
 
             };
         }
