@@ -18,6 +18,8 @@ namespace TVCheck.Infrastructure
         public static List<Actor> Actors { get; set; } = Actor.GenerateActors();
         public static List<Genre> Genres { get; set; } = Genre.GenerateGenres();
 
+        public static List<Anime> Animes { get; set; } = Anime.GenerateAnime();
+
     
     }
 }

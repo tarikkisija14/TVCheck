@@ -32,3 +32,5 @@ C:\Users\tarik\source\repos\TvCheck\TvCheck.WinApp\obj\Debug\net8.0-windows\TVCh
 C:\Users\tarik\source\repos\TvCheck\TvCheck.WinApp\obj\Debug\net8.0-windows\TVCheck.WinApp.Shows.frmShows.resources
 C:\Users\tarik\source\repos\TvCheck\TvCheck.WinApp\obj\Debug\net8.0-windows\TVCheck.WinApp.sourcelink.json
 C:\Users\tarik\source\repos\TvCheck\TvCheck.WinApp\obj\Debug\net8.0-windows\TVCheck.WinApp.Shows.frmShowAddEdit.resources
+C:\Users\tarik\source\repos\TvCheck\TvCheck.WinApp\obj\Debug\net8.0-windows\TVCheck.WinApp.frmEpisodes.resources
+C:\Users\tarik\source\repos\TvCheck\TvCheck.WinApp\obj\Debug\net8.0-windows\TVCheck.WinApp.frmMyShows.resources
